@@ -1,0 +1,97 @@
+
+
+body {
+    background: #464c55;
+}
+
+
+h1 {
+    color: black;
+    font-family: "Garamond";
+    font-size: 3em;
+}
+
+h3
+{
+    color: darkgrey;
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family: "Garamond";
+    text-decoration: underline;
+}
+
+img {
+    
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color:lightgrey;
+}
+
+nav a { /* links within Nav container */
+
+    padding: 15px;
+    padding-bottom: 0px;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover { /* pseudo class */
+    border-bottom:2px black solid;
+    font-size: 2em;
+    transition: 1.2s; /* transition effect */
+}
+
+header, main, nav, footer {
+    text-align: center;
+}
+
+li {
+    text-align: left;
+}
+
+.intro {
+    
+    color: lightgrey;
+    font-size: .9em;
+    font-family: "PT SANS NARROW";
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+    font-style: italic;
+    
+}
+
+.row
+{
+  height: 100%;
+  width: 50%;
+}
+
+.hackerName {
+    
+    color: white;
+    font-family: "Garamond";
+    font-size: 2em;
+}
+
+.hackerBio {
+    color: lightgrey;
+    font-size: .9em;
+    font-style: italic;
+}
+
+.hackerTypes
+{
+    color: lightgrey;
+    font-size: 1.0em;
+    padding-bottom: 8px;
+}
+
+.spanName {
+   
+    font-weight: bold;
+}

@@ -1,0 +1,43 @@
+<%- include('partials/header.ejs') %>
+    
+    <body>
+        <header>
+            <h1> Black Hat Hackers </h1>
+             <figure> 
+        <img src="img/blackhat.png" style="width: 6%; height: 6%;" alt="blackhat"> <!-- it was necessary to resize these pictures within the code as doing so in Windows removed transparency -->
+        </figure>
+        </header>
+        <hr />
+   
+      
+   
+           <p class="intro"> 
+         Black Hat hackers generally act without the permission of the owners of the system they are penetrating, and often do it for personal profit, though often times simply due to curiosity or for the challenge. </p>
+             <br />
+             
+         <h3 style="color: black"> Types of Black Hat Hacking </h3>   
+           
+        <ul>
+            <li class = "hackerTypes"> 
+           <span class="spanName"> Phishing: </span> Phishing is one of the most common types of hacking. It relies on social engineering, and essentially involves tricking end users into entering their personal information or 
+            taking some other action that results in the gain of privileged information or even money from an organization or individual. Spearphishing is a subset of phishing, and essentially involves impersonating
+            someone the target knows or trusts. I work in IT currently, and at my company, a spear phisher posing as the CFO tricked an executive assistant into sending the phisher $1,000 in gift cards, by claiming
+            they were for use at a holiday party. 
+            </li>
+             <li class = "hackerTypes"> 
+            <span class="spanName"> SQL Injection: </span> SQL injection attacks typically involve using web forms to enter database commands that are passed unnoticed to a database when the form data is sent to the database. 
+            For example, if the web form is requesting you enter your name, you could add an additional SQL command to the text you enter in the form, that would then run as a command in the database.
+            For instance, you could enter "lastname'; DROP database_name;" In an improperly secured database, this could cause the database to be deleted. You might also be able to insert admin privileges for 
+            yourself. 
+            </li>
+           <li class = "hackerTypes">  
+           <span class="spanName"> ARP Spoofing: </span>ARP spoofing involves modifying a network's APR cache so the MAC addresses that network devices send data too are actually the hacker's devices, instead of the intended
+            devices. This allows hackers to receive data intended for someone else, including potentially secure data like credit card data. 
+            </li>
+           <li class = "hackerTypes"> 
+             <span class="spanName"> Malware/Spyware: </span>It is possible to install malware on a user's computer that will then perform some action like sending back cached password data or perform keylogger actions on the target 
+             computer. It's one of the better known types of hacking approaches and most people have experienced having malware on their systems at some point. 
+            </li>
+        </ul> 
+        
+<%- include('partials/footer.ejs') %>
