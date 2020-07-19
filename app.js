@@ -1,9 +1,24 @@
 const express = require("express");
 const app = express();
+
+var faker = require('faker');
+var randomName = faker.name.findName();
+var randomText = faker.lorem.paragraphs();
+
 app.engine('html', require('ejs').renderFile);
 app.use(express.static("public"));
 
 //routes 
+//faker routes
+app.get("/faker", function(req, res){
+ 
+ res.render("faker.ejs", {"randomName":faker.name.findName(), 
+ "randomText":faker.lorem.paragraphs(), "randomSource":"• Source: \n"}
+ );
+ 
+ });
+
+//page routes
 app.get("/", function(req, res){
  
  res.render("index.html");
